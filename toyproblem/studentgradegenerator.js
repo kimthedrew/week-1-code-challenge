@@ -13,11 +13,14 @@ if (x < 0 || x > 100) {
 } else {
     return 'E';
 }
+
 }
 let marks = prompt("Enter student marks (0-100);") //asks user to input marks
 marks = Number(marks);
 if (isNaN(marks)) {
     console.log("Invalid input, enter a numerical value.");
+    alert("Invalid input, enter a numerical value.");
 } else {
     console.log(gradingMarks(marks));
+    alert(gradingMarks(marks));
 }

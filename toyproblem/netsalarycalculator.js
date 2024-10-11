@@ -12,10 +12,10 @@ function netCalculator (basicSalary, benefits) {
          nhif = 300;
     }
     else if ( grossSalary <= 11999) {
-         nhif = 400;
-    }
+        nhif = 400;
+   }
      else if ( grossSalary <= 14999) {
-         nhif = 500;
+         nhif = 500;  
     }
     else if ( grossSalary <= 19999) {
          nhif = 600;
@@ -79,7 +79,6 @@ function netCalculator (basicSalary, benefits) {
             return ;
         } //payee dedutions
         
-
     }
     
 {
@@ -118,9 +117,15 @@ const benefits = prompt("Enter benefits:");
 const calculatorDetails = netCalculator(basicSalary, benefits);
 
     console.log("Gross Salary:", calculatorDetails.grossSalary);
-    console.log("NHIF:", calculatorDetails.nhif);
+    alert("Gross Salary: " + calculatorDetails.grossSalary);
+    console.log("NHIF:",  calculatorDetails.nhif);
+    alert("NHIF: " + calculatorDetails.nhif);
     console.log("NSSF:", calculatorDetails.nssf);
-    console.log("housingLevy", calculatorDetails.housingLevy)
+    alert("NSSF: " + calculatorDetails.nssf);
+    console.log("housingLevy:", calculatorDetails.housingLevy)
+    alert("housingLevy: " + calculatorDetails.housingLevy);
     console.log("PAYEE Deductions:", calculatorDetails.payee);
+    alert("PAYEE Deductions: " + calculatorDetails.payee);
     console.log("NetSalary:", calculatorDetails.netSalary);
+    alert("NetSalary: " + calculatorDetails.netSalary);
     
